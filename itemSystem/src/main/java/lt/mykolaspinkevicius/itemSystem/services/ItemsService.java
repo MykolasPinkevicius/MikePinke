@@ -33,4 +33,9 @@ public class ItemsService {
 	public void deleteItem(int itemId) {
 		repository.deleteById(itemId);
 	}
+	
+	public int updateItem(Item item, int id) {
+		item.setId(id);
+		return repository.save(item).getId();
+	}
 }

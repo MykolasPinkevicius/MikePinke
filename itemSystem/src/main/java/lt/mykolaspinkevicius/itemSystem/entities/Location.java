@@ -1,5 +1,6 @@
 package lt.mykolaspinkevicius.itemSystem.entities;
 
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,8 +17,9 @@ public class Location {
 	private String country;
 	private String city;
 	private String street;
-	private String gpsCoordinate;
-
+	private String gpsCoordinates;
+	
+	
 	public Integer getId() {
 		return id;
 	}
@@ -50,12 +52,12 @@ public class Location {
 		this.street = street;
 	}
 
-	public String getGpsCoordinate() {
-		return gpsCoordinate;
+	public String getGpsCoordinates() {
+		return gpsCoordinates;
 	}
 
-	public void setGpsCoordinate(String gpsCoordinate) {
-		this.gpsCoordinate = gpsCoordinate;
+	public void setGpsCoordinates(String gpsCoordinates) {
+		this.gpsCoordinates = gpsCoordinates;
 	}
 
 }
