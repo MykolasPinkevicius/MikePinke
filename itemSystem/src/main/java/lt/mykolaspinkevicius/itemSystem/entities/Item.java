@@ -27,7 +27,7 @@ public class Item {
 
 	@ManyToOne
 	@JoinColumn(name = "location_id")
-	@Cascade(value={org.hibernate.annotations.CascadeType.MERGE})
+	@Cascade(value={org.hibernate.annotations.CascadeType.ALL})
 	private Location location;
 
 	public Integer getId() {
