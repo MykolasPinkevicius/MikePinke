@@ -33,6 +33,9 @@ public class ItemsController {
 	@Autowired
 	private ItemsService service;
 
+	public ItemsController(ItemsService service) {
+		this.service = service;
+	}
 	
 	@PostMapping
 	@ResponseStatus(value=HttpStatus.CREATED)
@@ -41,7 +44,7 @@ public class ItemsController {
 	}
 	
 	@PutMapping("/{itemId}")
-	@ResponseStatus(value=HttpStatus.NO_CONTENT)
+	@ResponseStatus(value=HttpStatus.OK)
 	public int updateItem(@RequestBody Item item, @PathVariable int itemId) {
 		return service.updateItem(item, itemId);
 	}
