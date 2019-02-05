@@ -1,0 +1,23 @@
+How to use app:
+
+First you need to download or clone the application from the link I send.
+
+All dependency injection was provided with Maven so it would be good that your system have it installed.
+Ofcourse we need IDE too.
+
+Than you need to import the ItemSystem project(i used Eclipse so it's very easy to import using Open Project from file system)
+
+You need to run application thru ItemSystemApplication main class.
+
+I used spring boot, H2 database(In memory not in file this time) and Swagger-UI for your comfort
+If your Port is already taken. You should change application.properties file settings(server.port=8080)
+
+When project is running and everyhitng is good you should go to localhost:8080/swagger-ui.html to test api crud methods and comment creation
+You can also look at localhost:8080/h2 if you want to take a look at the database console.
+
+Thank you for reviewing my task.
+
+P.S. If you have anything that you see and can help me improve please write me at mykolaspinkevicius@gmail.com
+
+
+
